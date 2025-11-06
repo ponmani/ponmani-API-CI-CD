@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: SAMPLE-CD-CI
 
 steps:
 - task: NodeTool@0
