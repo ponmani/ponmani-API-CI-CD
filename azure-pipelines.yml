@@ -7,8 +7,7 @@ pool:
   name: SAMPLE-CD-CI
 
 variables:
-  buildConfiguration: 'Release'
-  azureSubscription: '<Your-Azure-Service-Connection>'
+  buildConfiguration: 'Release'  
   resourceGroup: 'MyNodeWebAPI-RG'
   webAppName: 'MyNodeWebAPIApp'
   location: 'EastUS'
