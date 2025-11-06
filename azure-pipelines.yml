@@ -27,6 +27,7 @@ steps:
 # -----------------------
 - script: |
     echo "Installing npm dependencies..."
+    workingDirectory: 'CD-CI/ANGULAR-CD-CI/SAMPLE-ANGULARUI'
     npm install
     echo "Building the project..."
     npm run build
