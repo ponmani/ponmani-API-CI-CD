@@ -49,15 +49,3 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
   displayName: 'Publish build artifacts'
-
-# -----------------------
-# 5. Deploy to Azure Web App
-# -----------------------
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: '$(azureSubscription)'
-    appType: 'webAppLinux'
-    appName: '$(webAppName)'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'zipDeploy'
-  displayName: 'Deploy Node.js Web API to Azure'
